@@ -1,0 +1,113 @@
+:root {
+  /* Color Palette */
+  --primary-deep-blue: #003366;
+  --secondary-teal: #008080;
+  --accent-orange: #FF8C00;
+  --text-dark: #1A202C;
+  --text-gray: #4A5568;
+  --text-light: #718096;
+  --bg-white: #FFFFFF;
+  --bg-light: #F8FAFC;
+  --bg-muted: #EDF2F7;
+  --white: #FFFFFF;
+
+  /* Typography */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --h1-size: 3.5rem;
+  --h2-size: 2.5rem;
+  --h3-size: 1.75rem;
+  --body-size: 1.125rem;
+
+  /* Spacing */
+  --section-padding: 6rem 1rem;
+  --container-max-width: 1200px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-standard: 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary-deep-blue);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: var(--transition-fast);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Button Variants */
+.btn {
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--accent-orange);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #E67E00;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--primary-deep-blue);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: #002244;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-deep-blue);
+  color: var(--primary-deep-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-deep-blue);
+  color: var(--white);
+}
